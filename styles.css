@@ -6,12 +6,12 @@ body {
     padding: 20px;
 }
 
-.filter-container {
+.filterContainer {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.filter-button {
+.filterButton {
     background-color: #007bff;
     color: white;
     border: none;
@@ -22,11 +22,11 @@ body {
     font-size: 16px;
 }
 
-.filter-button:hover {
+.filterButton:hover {
     background-color: #0056b3;
 }
 
-.card-container {
+.cardContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

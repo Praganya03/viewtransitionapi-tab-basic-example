@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-button');
+    const filterButtons = document.querySelectorAll('.filterButton');
     const cards = document.querySelectorAll('.card');
 
 
