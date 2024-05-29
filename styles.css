@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.filter-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+   height: 140px;
+}
+
+.card p {
+    margin: 10px 0 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/* view transition api */
+
+
+@view-transition{
+    navigation: auto;
+}
+
+.transition{
+    view-transition-name: tabs;
+  }
+
+  ::view-transition-old(tabs),
+  ::view-transition-new(tabs) {
+    animation-duration: 1s;
+  }
+  
+  ::view-transition-old(tabs) {
+    animation: fadeOut 1s, scaleOut 1s;
+  }
+  
+  ::view-transition-new(tabs) {
+    animation: fadeIn 1s, scaleIn 1s;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+.card:nth-child(odd) {
+    animation: fadeIn 0.3s forwards;
+}
+
+.card:nth-child(even) {
+    animation: scaleIn 0.3s forwards;
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Card Sections</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="filter-container">
+        <button class="filter-button" data-filter="all">All</button>
+        <button class="filter-button" data-filter="cars">Cars</button>
+        <button class="filter-button" data-filter="animals">Animals</button>
+        <button class="filter-button" data-filter="fruits">Fruits</button>
+        <button class="filter-button" data-filter="colors">Colors</button>
+        <button class="filter-button" data-filter="sports">Sports</button>
+        <button class="filter-button" data-filter="nature">Nature</button>
+    </div>
+
+    <div class="card-container transition">
+        <a href="cars.html" class="card" data-category="cars">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FyfGVufDB8fDB8fHww" 
+            alt="Car">
+            <p>Car Model A</p>
+        </a>
+        <div class="card" data-category="cars">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyfGVufDB8fDB8fHww" 
+            alt="Car">
+            <p>Car Model B</p>
+        </div>
+        <div class="card" data-category="cars">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FyfGVufDB8fDB8fHww" 
+            alt="Car">
+            <p>Car Model C</p>
+        </div>
+       
+        <div class="card" data-category="animals">
+            <img src="https://images.unsplash.com/photo-1611782712936-6247d9711816?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRlZXJ8ZW58MHx8MHx8fDA%3D" alt="Animal">
+            <p>Deer</p>
+        </div>
+        <div class="card" data-category="animals">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nfGVufDB8fDB8fHww" alt="Animal">
+            <p>Dog</p>
+        </div>
+        <div class="card" data-category="animals">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0fGVufDB8fDB8fHww" alt="Animal">
+            <p>Cat</p>
+        </div>
+        <div class="card" data-category="animals">
+            <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxpb258ZW58MHx8MHx8fDA%3D" alt="Animal">
+            <p>Lion</p>
+        </div>
+        <div class="card" data-category="animals">
+            <img src="https://media.istockphoto.com/id/2097458886/photo/bengal-tiger-panthera-tigris-tigris-is-the-biggest-cat-in-wild-cat-in-indian-jungle-in.webp?b=1&s=170667a&w=0&k=20&c=JQ4W0Riw6as88LpzLudam2ZEe9hPITCB0TXZD3DrAAk=" alt="Animal">
+            <p>Tiger</p>
+        </div>
+        <div class="card" data-category="animals">
+            <img src="https://media.istockphoto.com/id/503686732/photo/elephant-washing-in-the-river.webp?b=1&s=170667a&w=0&k=20&c=tGHUSCf_GhbivwXL0AYiS5Cr-Ez2FaNOZW0BmWcydec=" alt="Animal">
+            <p>Elephant</p>
+        </div>
+        <div class="card" data-category="fruits">
+            <img src="https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHx8fDA%3D" alt="Fruit">
+            <p>Apple</p>
+        </div>
+        <div class="card" data-category="fruits">
+            <img src="https://images.unsplash.com/photo-1603052875302-d376b7c0638a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhbmFuYXxlbnwwfHwwfHx8MA%3D%3D" alt="Fruit">
+            <p>Banana</p>
+        </div>
+        <div class="card" data-category="fruits">
+            <img src="https://media.istockphoto.com/id/1285898335/photo/ripe-for-the-picking.webp?b=1&s=170667a&w=0&k=20&c=d0DFcDupZt1kHFUQUSVWurnfyr3-9RTHTQRV7q8cfqc=" alt="Fruit">
+            <p>Orange</p>
+        </div>
+        <div class="card" data-category="fruits">
+            <img src="https://media.istockphoto.com/id/1318973540/photo/indian-alphonso-mango-fruits-in-grass-closeup.webp?b=1&s=170667a&w=0&k=20&c=yuk3k_Qufs5bC9kOU-P8ugxmTkb1p9X934jE0h_ao8Y=" alt="Fruit">
+            <p>Mango</p>
+        </div>
+        <div class="card" data-category="colors">
+            <img src="https://images.unsplash.com/flagged/photo-1593005510509-d05b264f1c9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVkJTIwY29sb3J8ZW58MHx8MHx8fDA%3D" alt="Color">
+            <p>Red</p>
+        </div>
+        <div class="card" data-category="colors">
+            <img src="https://images.unsplash.com/photo-1589859762194-eaae75c61f64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZSUyMGNvbG9yfGVufDB8fDB8fHww" alt="Color">
+            <p>Blue</p>
+        </div>
+        <div class="card" data-category="sports">
+            <img src="https://plus.unsplash.com/premium_photo-1679690884144-1f43b8f3bf41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3JpY2tldHxlbnwwfHwwfHx8MA%3D%3D" alt="Sports">
+            <p>Cricket</p>
+        </div>
+        <div class="card" data-category="sports">
+            <img src="https://media.istockphoto.com/id/155378373/photo/checkmate-move-chess-knight-is-checking-chess-king-chess-board.webp?b=1&s=170667a&w=0&k=20&c=fJRWODTTOHbqnMy6jEjCAAD5uMOzUWgSjZDN9KT6r0k=" alt="Sports">
+            <p>Chess</p>
+        </div>
+        <div class="card" data-category="sports">
+            <img src="https://media.istockphoto.com/id/484864454/photo/carrom-board-game.webp?b=1&s=170667a&w=0&k=20&c=2M8AFdUTHStpJBi1KNTNJsIUWhcnWrsIp-yeLAjMcP0=" alt="Sports">
+            <p>Carrom</p>
+        </div>
+        <div class="card" data-category="sports">
+            <img src="https://media.istockphoto.com/id/869773604/photo/field-hockey-in-stadium-with-copy-space.webp?b=1&s=170667a&w=0&k=20&c=f5Hogqr9W2ZOytFrUIuQqMOaJZ3TTetgVO-7eXT1fTU=" alt="Sports">
+            <p>Hockey</p>
+        </div>
+        
+        <div class="card" data-category="nature">
+            <img src="https://media.istockphoto.com/id/499689946/photo/spruce-tree-forest-in-autumn-illuminated-by-sunbeams-through-fog.webp?b=1&s=170667a&w=0&k=20&c=jGaaOE7Dey-4axOqOzWmnls4IIThpQO2EeRNSJvyIqQ=" alt="Nature">
+            <p>Forest</p>
+        </div>
+        <div class="card" data-category="nature">
+            <img src="https://media.istockphoto.com/id/1672317574/photo/ama-dablam-mountain-peak.webp?b=1&s=170667a&w=0&k=20&c=Ea8yDEHpUemrRuMZUKGPDBE11YTWVksIupMN8FkEBf8=" alt="Nature">
+            <p>Mountain</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

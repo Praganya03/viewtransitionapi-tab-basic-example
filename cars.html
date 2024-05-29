@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 60px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .car-image img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .car-info, .car-specs, .car-features, .contact-info {
+            margin: 2rem 0;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-info h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .car-specs ul, .car-features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .car-specs li, .car-features li {
+            background-color: #f9f9f9;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/index.html">Home</a>
+        <h1>Car Details</h1>
+    </header>
+    <main>
+        <section class="car-image">
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyfGVufDB8fDB8fHww" alt="Car Image">
+        </section>
+        <section class="car-info">
+            <h2>Car Name</h2>
+            <p><strong>Model:</strong> Car Model</p>
+            <p><strong>Year:</strong> 2024</p>
+            <p><strong>Price:</strong> $50,000</p>
+        </section>
+        <section class="car-specs">
+            <h3>Specifications</h3>
+            <ul>
+                <li><strong>Engine:</strong> V8</li>
+                <li><strong>Horsepower:</strong> 500 HP</li>
+                <li><strong>Transmission:</strong> 6-speed manual</li>
+                <li><strong>Fuel Type:</strong> Gasoline</li>
+                <li><strong>Mileage:</strong> 20 MPG</li>
+            </ul>
+        </section>
+        <section class="car-features">
+            <h3>Features</h3>
+            <ul>
+                <li>Leather seats</li>
+                <li>Sunroof</li>
+                <li>Bluetooth connectivity</li>
+                <li>Backup camera</li>
+                <li>Navigation system</li>
+                <li>Heated seats</li>
+            </ul>
+        </section>
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <p>If you have any questions or would like to schedule a test drive, please contact us:</p>
+            <p><strong>Email:</strong> sales@example.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
